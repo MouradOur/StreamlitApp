@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sbn
+#import seaborn as sbn
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
@@ -53,9 +53,9 @@ Y = df["price"]
 
 X.info()
 
-sbn.histplot(data=df, x="price", kde=1)
-plt.title("Distribution des prix des diamants")
-plt.show()
+#sbn.histplot(data=df, x="price", kde=1)
+#plt.title("Distribution des prix des diamants")
+#plt.show()
 
 
 st.set_page_config(page_title="Diamond Price Predictor", layout="wide")
